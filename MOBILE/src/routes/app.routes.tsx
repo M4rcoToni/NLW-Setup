@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const { Navigator, Screen } = createNativeStackNavigator();
 
 import { Habit } from '../screens/Habit';
-import { Home } from '../screens/Home';
+import { Home } from '../screens/home';
 import { New } from '../screens/New';
 
 export function AppRoutes() {

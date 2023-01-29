@@ -99,21 +99,21 @@ export function Habit() {
         <ProgressBar progress={habitsProgress} />
 
         <View className={clsx("mt-6", {
-          ['opacity-50']: isDateInPast
-        })}>
+            ['opacity-50']: isDateInPast
+          })}>
           {
             dayInfo?.possibleHabits ?
-              dayInfo.possibleHabits?.map(habit => (
-                <Checkbox
-                  key={habit.id}
-                  title={habit.title}
-                  checked={completedHabits?.includes(habit.id)}
-                  onPress={() => handleToggleHabits(habit.id)}
-                  disabled={isDateInPast}
-                />
-              ))
-              :
-              <HabitsEmpty />
+            dayInfo.possibleHabits?.map(habit => (
+              <Checkbox 
+                key={habit.id}
+                title={habit.title}
+                checked={completedHabits?.includes(habit.id)}
+                onPress={() => handleToggleHabits(habit.id)}
+                disabled={isDateInPast}
+              />
+            ))
+            : 
+            <HabitsEmpty />
           }
         </View>
 

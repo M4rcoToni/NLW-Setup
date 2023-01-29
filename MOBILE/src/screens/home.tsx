@@ -2,25 +2,12 @@ import { useCallback, useState } from 'react';
 import { Text, View, ScrollView, Alert } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 
-<<<<<<< HEAD
 import { api } from '../lib/axios';
 import { generateRangeDatesFromYearStart } from '../utils/generate-range-between-dates';
 
 import { Header } from '../components/Header';
 import { Loading } from '../components/Loading';
 import { HabitDay, DAY_SIZE } from '../components/HabitDay';
-=======
-import { View, Text, ScrollView, Alert } from 'react-native';
-
-import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
-import { api } from '../lib/anxios';
-
-import { HabitDay, DAY_SIZE } from '../components/HabitDay';
-import { Header } from '../components/Header';
-import { useNavigation } from '@react-navigation/native';
-import { useState, useEffect } from 'react';
-import { Loading } from '../components/Loading';
->>>>>>> a7c9fa07665d5f1e206ecb80091c60a9865a6858
 import dayjs from 'dayjs';
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
@@ -34,7 +21,6 @@ type SummaryProps = Array<{
   amount: number;
   completed: number;
 }>
-<<<<<<< HEAD
 
 export function Home() {
   const [loading, setLoading] = useState(true)
@@ -67,39 +53,6 @@ export function Home() {
     )
   }
 
-=======
-
-export function Home() {
-  const { navigate } = useNavigation();
-
-  const [loading, setLoading] = useState(true);
-  const [summary, setSummary] = useState<SummaryProps | null>(null);
-
-  async function fetchData() {
-    try {
-      setLoading(true)
-      const response = await api.get('/summary');
-      setSummary(response.data)
-      console.log(response.data);
-
-    } catch (error) {
-      Alert.alert('Ops', 'Não foi possível carregar o sumário de hábitos.')
-      console.log(error)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-  if (loading) {
-    return (
-      <Loading />
-    )
-  }
->>>>>>> a7c9fa07665d5f1e206ecb80091c60a9865a6858
   return (
     <View className='flex-1 bg-background px-8 pt-16'>
       <Header />
@@ -131,7 +84,6 @@ export function Home() {
                     return dayjs(date).isSame(day.date, 'day')
                   })
 
-<<<<<<< HEAD
                   return (
                     <HabitDay
                       key={date.toISOString()}
@@ -143,44 +95,6 @@ export function Home() {
                   )
                 })
               }
-=======
-        {
-          summary &&
-          <View
-            className='flex-row flex-wrap'
-          >
-            {
-              datesFromYearStart.map(date => {
-                const dayWithHabits = summary.find(day => {
-                  return dayjs(date).isSame(day.date, 'day');
-                })
-
-
-                return (
-                  <HabitDay
-                    date={date}
-                    amountOfHabbits={dayWithHabits?.amount}
-                    amountCompleted={dayWithHabits?.completed}
-                    onPress={() => navigate('habit', { date: date.toISOString() })}
-                    key={date.toISOString()}
-                  />
-                )
-
-              })
-            }
-            {
-              amountOfDaysToFill > 0 && Array
-                .from({ length: amountOfDaysToFill })
-                .map((_, index) => (
-                  <View
-                    key={index}
-                    className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40"
-                    style={{ width: DAY_SIZE, height: DAY_SIZE }}
-                  />
-                ))
-            }
-          </View>}
->>>>>>> a7c9fa07665d5f1e206ecb80091c60a9865a6858
 
               {
                 amountOfDaysToFill > 0 && Array

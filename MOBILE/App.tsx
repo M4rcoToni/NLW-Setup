@@ -1,30 +1,31 @@
-import './src/lib/dayjs'
+import './src/lib/dayjs';
+
 import { StatusBar } from 'react-native';
-import {
+import { 
   useFonts,
   Inter_400Regular,
   Inter_600SemiBold,
   Inter_700Bold,
   Inter_800ExtraBold
-}
-  from '@expo-google-fonts/inter'
+} from '@expo-google-fonts/inter';
 
 import { Loading } from './src/components/Loading';
 import { Routes } from './src/routes';
 
 export default function App() {
-  const [fonstLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_600SemiBold,
     Inter_700Bold,
     Inter_800ExtraBold
   });
 
-  if (!fonstLoaded) {
+  if (!fontsLoaded) {
     return (
       <Loading />
     );
   }
+
   return (
     <>
       <Routes />

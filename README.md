@@ -16,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Siga os passos abaixo, para instalar os serviços Web, Mobile e Server:
 
-## Server
+## Para rodar o Server:
 
 ```bash
 $ npm install
@@ -24,7 +24,7 @@ $ npx prisma migrate deploy
 $ npm run dev
 ```
 
-## Mobile
+##  Para instalar o Habits, siga estes passos:
 
 ```bash
 $ cd mobile
@@ -35,7 +35,6 @@ $ npm expo start
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT.
-
 <br></br>
 
 Projeto desenvolvido com 🖤 por [M4rcotoni](https://github.com/m4rcotoni)

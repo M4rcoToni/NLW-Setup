@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Siga os passos abaixo, para instalar os serviços Web, Mobile e Server:
 
-### Server
+## Server
 
 ```bash
 $ npm install
@@ -25,7 +25,7 @@ $ npx prisma migrate deploy
 $ npm run dev
 ```
 
-### Mobile
+## Mobile
 
 ```bash
 $ cd mobile

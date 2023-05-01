@@ -1,14 +1,42 @@
 # NLW-Setup
+O Habits é um app para ajudar a rastrear os hábitos. Selecione e faça a gestão dos seus hábitos diários no dia e crie um novo dia (com os mesmos hábitos) após concluí-lo.
 
-Dependências
-Algumas das principais dependências utilizadas neste projeto são:
+## 🚀 Tecnologias
 
-- @react-navigation/native: biblioteca de navegação que permite a criação de rotas e telas no aplicativo.
-- axios: biblioteca para realizar requisições HTTP.
-- dayjs: biblioteca para manipulação de datas.
-- expo: plataforma utilizada para desenvolvimento de aplicativos mobile.
-- nativewind: biblioteca para estilização dos componentes utilizando classes CSS-like.
-- react-native: biblioteca para desenvolvimento de aplicativos mobile utilizando JavaScript e React.
-- react-native-svg: biblioteca para renderização de gráficos vetoriais (SVG) no aplicativo.
-- tailwindcss: biblioteca para estilização dos componentes utilizando classes CSS-like com uma abordagem utility-first.
-- typescript: linguagem de programação utilizada para adicionar tipagem ao JavaScript.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [ReactJS](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ViteJS](https://vitejs.dev/)
+- [Prisma](https://www.prisma.io/)
+- [Fastify](https://www.fastify.io/)
+- [Expo](https://expo.io/)
+- [React Native](https://reactnative.dev/)
+- [React Navigation](https://reactnavigation.org/)
+
+Siga os passos abaixo, para instalar os serviços Web, Mobile e Server:
+
+### Server
+
+```bash
+$ npm install
+$ npx prisma migrate deploy
+$ npm run dev
+```
+
+### Mobile
+
+```bash
+$ cd mobile
+$ npm install
+$ npm expo start
+```
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT.
+
+<br></br>
+
+Projeto desenvolvido com 🖤 por [M4rcotoni](https://github.com/m4rcotoni)

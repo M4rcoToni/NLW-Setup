@@ -8,7 +8,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [ReactJS](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [ViteJS](https://vitejs.dev/)
 - [Prisma](https://www.prisma.io/)
 - [Fastify](https://www.fastify.io/)
 - [Expo](https://expo.io/)

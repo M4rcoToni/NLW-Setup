@@ -5,13 +5,12 @@ O Habits é um app para ajudar a rastrear os hábitos. Selecione e faça a gest�
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [ReactJS](https://reactjs.org/)
+- [Expo](https://expo.io/)
+- [React Native](https://reactnative.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma](https://www.prisma.io/)
 - [Fastify](https://www.fastify.io/)
-- [Expo](https://expo.io/)
-- [React Native](https://reactnative.dev/)
 - [React Navigation](https://reactnavigation.org/)
 
 Siga os passos abaixo, para instalar os serviços Web, Mobile e Server:

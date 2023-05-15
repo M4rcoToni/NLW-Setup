@@ -1,6 +1,10 @@
 # NLW-Setup
 O Habits é um app para ajudar a rastrear os hábitos. Selecione e faça a gestão dos seus hábitos diários no dia e crie um novo dia (com os mesmos hábitos) após concluí-lo.
 
+<img src=".github/splash.png" height="550" /> <img src=".github/home.png" height="550"/>
+
+<img src=".github/new-habit.png" height="550" /> <img src=".github/habits.png" height="550"/>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
